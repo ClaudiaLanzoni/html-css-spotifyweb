@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.provaheader {
+    display: flex;
+    justify-content: flex-end;
+    overflow-x: hidden;
+}
+
+.provanav {
+    width:
+}
+
+.header-container {
+    height: 10vh;
+    width: 85%;
+    background-color: black;
+    opacity: 0.8;
+    text-align: right;
+    padding: 10px 30px;
+    float: right;
+}
+
+
+
+.button-upgrade {
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    padding: 7px 35px;
+    
+}
+
+.nav-container {
+    height: 90vh;
+    width: 15%;
+    background-color: black;
+    color: white;
+    float: inline-start;
+  
+}
+
+.footer-container {
+    height: 10vh;
+    background-color: violet;
+    
+}
+
+.provafooter {
+    display: flex;
+    align-items: flex-end;
+}
+
+/*.clearfix {
+    content: "";
+    display: table-cell;
+    clear: both;
+}*/
+
+#logo-spotify-large {
+    width: 80%;
+    background-color: black;
+}
