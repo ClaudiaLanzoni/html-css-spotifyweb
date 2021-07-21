@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Varela Round', sans-serif;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 .container {
@@ -39,6 +39,10 @@ body {
     width: 200px;
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 3px 15px;
 }
 
 .button-upgrade {
@@ -49,13 +53,16 @@ body {
     background-color: rgba(8,11,18,255);
     border-radius: 15px;
     padding: 7px 35px;
+    margin-right: 10px;
 }
 
 .fa-plus-square {
-    display: inline-block;
-    height: 25px;
-    width: 25px;
-    color: white;
+    color: rgba(163,163,163,255);
+    vertical-align: middle;
+}
+
+.nav-bar ul {
+    list-style-type: none;
 }
 
 .nav-bar img {
@@ -63,8 +70,32 @@ body {
     vertical-align: middle;
 }
 
+.div-line {
+    background-color: rgba(79,79,79,255);
+    height: 1px;
+    width: 170px;
+    margin-bottom: 8px;
+}
+
 .user-img {
-    
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(128,128,128,255);
+    border-radius: 50%;
+    background-image: url(../img/profile.svg);
+    background-size: cover;
+}
+
+.upper-nav {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.upper-nav li {
+    line-height: 20px;
 }
 
 .footer-container {
@@ -85,4 +116,8 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+#logo-spotify-nav {
+    width: 60%;
 }
