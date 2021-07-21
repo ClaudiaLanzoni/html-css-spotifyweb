@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
 }
 
 .container {
@@ -15,7 +16,7 @@ body {
 
 .top-bar {
     height: 10vh;
-    width: 80%;
+    width: calc(100% - 200px);
     background-color: rgba(8,11,18,255);
     text-align: right;
     line-height: 10vh;
@@ -23,19 +24,21 @@ body {
 
 .main-container {
     height: 90vh;
+    width: 100%;
     background-color: lightseagreen;
-}
-
-.nav-bar {
-    height: 100%;
-    width: 20%;
-    background-color: crimson;
 }
 
 .main-section {
     height: 80vh;
-    width: 80%;
+    width: calc(100% - 200px);
     background-color: lightgreen;
+}
+
+.nav-bar {
+    height: 100%;
+    width: 200px;
+    background-color: black;
+    color: white;
 }
 
 .button-upgrade {
@@ -46,6 +49,22 @@ body {
     background-color: rgba(8,11,18,255);
     border-radius: 15px;
     padding: 7px 35px;
+}
+
+.fa-plus-square {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    color: white;
+}
+
+.nav-bar img {
+    width: 25px;
+    vertical-align: middle;
+}
+
+.user-img {
+    
 }
 
 .footer-container {
