@@ -9,6 +9,11 @@ body {
     font-size: 11px;
 }
 
+h2, 
+h3 {
+    color: white;
+}
+
 .container {
     height: 100vh;
     width: 100%;
@@ -31,7 +36,9 @@ body {
 .main-section {
     height: 80vh;
     width: calc(100% - 200px);
-    background-color: rgba(20,25,34,255);
+    /*background-color: rgba(20,25,34,255);*/
+    background-color: rgb(211, 191, 153);
+    color: rgba(122,124,129,255);
 }
 
 .nav-bar {
@@ -105,7 +112,6 @@ body {
 
 .menu-main-section {
     text-transform: uppercase;
-    color: rgba(122,124,129,255);
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -115,6 +121,16 @@ body {
     margin-right: 20px;
 }
 
+.main-img {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    
+}
+
+.recently-played-section>div {
+    display: inline-block;
+}
 
 
 
@@ -142,6 +158,16 @@ body {
 #logo-spotify-nav {
     width: 60%;
 }
+
+#heavy-metal-img {
+    background-image: url(../img/metal_lifting.jpg);
+}
+
+#stranger-img {
+    background-image: url(../img/stranger.jpeg);
+}
+
+
 
 @media screen and (max-width: 575px) {
     
