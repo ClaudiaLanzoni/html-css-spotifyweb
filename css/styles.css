@@ -107,7 +107,7 @@ h1 {
     flex-shrink: 1;
 }
 
-.downer-nav {
+.lower-nav {
     flex-shrink: 1;
 }
 
@@ -173,8 +173,12 @@ h1 {
     clear: both;
 }
 
-#logo-spotify-nav {
+#logo-spotify-large {
     width: 60%;
+}
+
+#logo-spotify-small {
+    display: none;
 }
 
 #heavy-metal-img {
@@ -204,11 +208,37 @@ h1 {
 
 @media screen and (max-width: 575px) {
     .nav-bar {
-        width: 50px;
+        width: 60px;
+        padding: 5px 15px 10px 15px;
     }
 
-    .nav-bar :not(li>img.upper-nav-img) {
+    .upper-nav span,
+    .playlist-nav,
+    #logo-spotify-large {
         display: none;
     }
 
+    .lower-nav span,
+    .div-line {
+        display: none;
+    }
+
+    #logo-spotify-small {
+        display: inline-block;
+    }
+
+    .upper-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .upper-nav img {
+        margin-bottom: 8px;
+    }
+
+    .user-img {
+        margin-top: 30px;
+    }
+    
 }
