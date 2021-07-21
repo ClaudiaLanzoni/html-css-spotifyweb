@@ -13,27 +13,21 @@ body {
     width: 100%;
 }
 
-.provaheader {
-    display: flex;
-    justify-content: flex-end;
-    overflow-x: hidden;
-}
-
-.provanav {
-    width:
-}
-
 .header-container {
     height: 10vh;
-    width: 85%;
+    width: 100%;
     background-color: black;
     opacity: 0.8;
     text-align: right;
-    padding: 10px 30px;
-    float: right;
+    line-height: 10vh;
 }
 
-
+.logo-spotify-header {
+    height: 10vh;
+    width: 15vw;
+    background-color: coral;
+    float: inline-start;
+}
 
 .button-upgrade {
     text-transform: uppercase;
@@ -43,15 +37,13 @@ body {
     background-color: black;
     border-radius: 15px;
     padding: 7px 35px;
-    
 }
 
 .nav-container {
     height: 90vh;
-    width: 15%;
+    width: 15vw;
     background-color: black;
     color: white;
-    float: inline-start;
   
 }
 
@@ -71,8 +63,3 @@ body {
     display: table-cell;
     clear: both;
 }*/
-
-#logo-spotify-large {
-    width: 80%;
-    background-color: black;
-}
