@@ -8,10 +8,14 @@ body {
     font-family: 'Varela Round', sans-serif;
     font-size: 11px;
 }
-
-h2, 
-h3 {
+ 
+h4 {
     color: white;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
 }
 
 .container {
@@ -39,6 +43,7 @@ h3 {
     /*background-color: rgba(20,25,34,255);*/
     background-color: rgb(211, 191, 153);
     color: rgba(122,124,129,255);
+    padding: 15px;
 }
 
 .nav-bar {
@@ -114,7 +119,7 @@ h3 {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    padding: 15px;
+    margin-bottom: 20px;
 }
 
 .menu-main-section span:not(:last-of-type) {
@@ -125,14 +130,27 @@ h3 {
     width: 120px;
     height: 120px;
     background-size: cover;
-    
+    margin-bottom: 8px;
+}
+
+.main-img-caption {
+    width: 120px;
+    text-align: center;
+}
+
+.main-img-caption>h4 {
+    margin-bottom: 3px;
 }
 
 .recently-played-section>div {
     display: inline-block;
 }
 
-
+.recently-played-section {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
 
 
 .footer-container {
@@ -167,8 +185,30 @@ h3 {
     background-image: url(../img/stranger.jpeg);
 }
 
+#quiet-img {
+    background-image: url(../img/aquietplace.jpeg);
+}
+
+#split-img {
+    background-image: url(../img/split.jpeg);
+}
+
+#cure-img {
+    background-image: url(../img/cure.jpeg);
+}
+
+#sinister-img {
+    background-image: url(../img/sinister.jpeg);
+}
 
 
 @media screen and (max-width: 575px) {
-    
+    .nav-bar {
+        width: 50px;
+    }
+
+    .nav-bar :not(li>img.upper-nav-img) {
+        display: none;
+    }
+
 }
