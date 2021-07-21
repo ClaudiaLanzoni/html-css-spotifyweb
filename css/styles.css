@@ -9,12 +9,12 @@ body {
     font-size: 11px;
 }
  
+h3,
 h4 {
     color: white;
 }
 
-h1 {
-    color: white;
+p {
     margin-bottom: 10px;
 }
 
@@ -24,7 +24,7 @@ h1 {
 }
 
 .top-bar {
-    height: 10vh;
+    height: 70px;
     width: calc(100% - 200px);
     background-color: rgba(8,11,18,255);
     text-align: right;
@@ -32,18 +32,22 @@ h1 {
 }
 
 .main-container {
-    height: 90vh;
+    height: calc(100% - 40px) ;
     width: 100%;
-    background-color: lightseagreen;
+    background-color: teal;
 }
 
 .main-section {
-    height: 80vh;
+    height: 100%;
     width: calc(100% - 200px);
     /*background-color: rgba(20,25,34,255);*/
     background-color: rgb(211, 191, 153);
     color: rgba(122,124,129,255);
     padding: 15px;
+}
+
+.main-section h3:first-of-type {
+    margin-bottom: 10px;
 }
 
 .nav-bar {
@@ -107,6 +111,10 @@ h1 {
     flex-shrink: 1;
 }
 
+.playlist-nav h4 {
+    text-transform: uppercase;
+}
+
 .lower-nav {
     flex-shrink: 1;
 }
@@ -119,7 +127,7 @@ h1 {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .menu-main-section span:not(:last-of-type) {
@@ -150,13 +158,35 @@ h1 {
     display: flex;
     align-content: flex-start;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
+.creato-per-john-section {
+    margin-bottom: 15px;
+}
+
+.creato-per-john-section,
+.artisti-section {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.creato-per-john-section .main-img-container,
+.recently-played-section .main-img-container,
+.artisti-section .main-img-container {
+    margin-right: 15px;
+}
+
+.relative {
+    position: relative;
+}
 
 .footer-container {
-    height: 10vh;
+    height: 40px;
     width: 100%;
-    background-color: violet;   
+    background-color: violet; 
+    position: fixed;  
+    bottom: 0;
 }
 
 .fl {
@@ -179,6 +209,10 @@ h1 {
 
 #logo-spotify-small {
     display: none;
+}
+
+#user {
+    margin-bottom: 50px;
 }
 
 #heavy-metal-img {
@@ -205,12 +239,36 @@ h1 {
     background-image: url(../img/sinister.jpeg);
 }
 
+#radar-img {
+    background-image: url(../img/radar.jpeg);
+}
+
+#daily-img {
+    background-image: url(../img/mixdaily.jpeg);
+}
+
+#delrey-img {
+    background-image: url(../img/youg.jpeg);
+    border-radius: 50%;
+}
+
+#einaudi-img {
+    background-image: url(../img/einaudi.jpeg);
+    border-radius: 50%;
+}
 
 @media screen and (max-width: 575px) {
+
+    /*NAV-BAR SECTION*/
     .nav-bar {
         width: 60px;
         padding: 5px 15px 10px 15px;
     }
+
+    /*.top-bar {         DA INSERIRE QUANDO AVRò CAPITO PERCHè WIDTH NAV RESTA FISSA COSì A LUNGO MENTRE SHRINK PAGINA
+        width: calc(100% - 50px);
+    }*/
+    
 
     .upper-nav span,
     .playlist-nav,
@@ -239,6 +297,7 @@ h1 {
 
     .user-img {
         margin-top: 30px;
+        margin-bottom: 20px;
     }
     
 }
