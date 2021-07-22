@@ -19,8 +19,9 @@ p {
 }
 
 .container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    overflow: auto;
 }
 
 .top-bar {
@@ -35,6 +36,7 @@ p {
     height: calc(100% - 40px) ;
     width: 100%;
     background-color: teal;
+    overflow: auto;
 }
 
 .main-section {
@@ -104,19 +106,19 @@ p {
 }
 
 .upper-nav {
-    height: 60vh;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-shrink: 1;
+    margin-bottom: 100px;
+}
+
+.lower-nav {
+    height: calc(100% - 350px);
 }
 
 .playlist-nav h4 {
     text-transform: uppercase;
-}
-
-.lower-nav {
-    flex-shrink: 1;
 }
 
 .upper-nav li {
@@ -257,7 +259,11 @@ p {
     border-radius: 50%;
 }
 
-@media screen and (max-width: 575px) {
+
+
+/*MEDIA QUERY SECTION*/
+
+@media screen and (max-width: 575px) {  /*XS MEDIA QUERY*/
 
     /*NAV-BAR SECTION*/
     .nav-bar {
@@ -298,6 +304,15 @@ p {
     .user-img {
         margin-top: 30px;
         margin-bottom: 20px;
+    }
+
+    /*MAIN SECTION*/
+
+    @media screen and /*(max-width:575px) and*/ (min-width: 576px) {
+
+        .recently-played-section {
+            display: none;
+        }
     }
     
 }
