@@ -29,23 +29,25 @@ p {
     width: calc(100% - 200px);
     background-color: rgba(8,11,18,255);
     text-align: right;
-    line-height: 10vh;
+    line-height: 70px;
 }
 
 .main-container {
-    height: calc(100% - 40px) ;
+    height: calc(100vh - 40px);
     width: 100%;
     background-color: teal;
     overflow: auto;
 }
 
 .main-section {
-    height: 100%;
+    height: calc(100vh - 110px);
     width: calc(100% - 200px);
     /*background-color: rgba(20,25,34,255);*/
     background-color: rgb(211, 191, 153);
     color: rgba(122,124,129,255);
     padding: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .main-section h3:first-of-type {
@@ -53,7 +55,7 @@ p {
 }
 
 .nav-bar {
-    height: 100%;
+    height: calc(100vh - 40px);
     width: 200px;
     background-color: black;
     color: rgba(110,110,110,255);
@@ -106,7 +108,7 @@ p {
 }
 
 .upper-nav {
-    height: 350px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -114,7 +116,10 @@ p {
 }
 
 .lower-nav {
-    height: calc(100% - 350px);
+    height: calc(100% - 450px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .playlist-nav h4 {
@@ -213,10 +218,6 @@ p {
     display: none;
 }
 
-#user {
-    margin-bottom: 50px;
-}
-
 #heavy-metal-img {
     background-image: url(../img/metal_lifting.jpg);
 }
@@ -268,12 +269,13 @@ p {
     /*NAV-BAR SECTION*/
     .nav-bar {
         width: 60px;
-        padding: 5px 15px 10px 15px;
+        padding: 5px 20px 10px 15px;
     }
 
-    /*.top-bar {         DA INSERIRE QUANDO AVRò CAPITO PERCHè WIDTH NAV RESTA FISSA COSì A LUNGO MENTRE SHRINK PAGINA
-        width: calc(100% - 50px);
-    }*/
+    .top-bar,
+    .main-section {         
+        width: calc(100% - 60px);
+    }
     
 
     .upper-nav span,
@@ -285,6 +287,10 @@ p {
     .lower-nav span,
     .div-line {
         display: none;
+    }
+
+    #download-logo {
+        padding-right: 3px;
     }
 
     #logo-spotify-small {
