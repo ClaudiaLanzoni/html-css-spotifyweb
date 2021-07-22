@@ -33,18 +33,17 @@ p {
 }
 
 .main-container {
-    height: calc(100vh - 40px);
+    height: calc(100vh - 70px);
     width: 100%;
     background-color: teal;
     overflow: auto;
 }
 
 .main-section {
-    height: calc(100vh - 110px);
+    height: calc(100vh - 140px);
     width: calc(100% - 200px);
-    /*background-color: rgba(20,25,34,255);*/
-    background-color: rgb(211, 191, 153);
-    color: rgba(122,124,129,255);
+    background-color: rgba(20,25,34);
+    color: rgba(122,124,129);
     padding: 15px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -55,7 +54,7 @@ p {
 }
 
 .nav-bar {
-    height: calc(100vh - 40px);
+    height: calc(100vh - 70px);
     width: 200px;
     background-color: black;
     color: rgba(110,110,110,255);
@@ -70,14 +69,14 @@ p {
     font-family: 'Varela Round', sans-serif;
     border: 1px solid white;
     color: white;
-    background-color: rgba(8,11,18,255);
+    background-color: rgba(8,11,18);
     border-radius: 15px;
     padding: 7px 35px;
     margin-right: 10px;
 }
 
 .fa-plus-square {
-    color: rgba(163,163,163,255);
+    color: rgba(163,163,163);
     vertical-align: middle;
 }
 
@@ -91,7 +90,7 @@ p {
 }
 
 .div-line {
-    background-color: rgba(79,79,79,255);
+    background-color: rgba(79,79,79);
     height: 1px;
     width: 170px;
     margin-bottom: 8px;
@@ -101,7 +100,7 @@ p {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-color: rgba(128,128,128,255);
+    background-color: rgba(128,128,128);
     border-radius: 50%;
     background-image: url(../img/profile.svg);
     background-size: cover;
@@ -113,6 +112,7 @@ p {
     flex-direction: column;
     justify-content: space-evenly;
     margin-bottom: 100px;
+    position: relative;
 }
 
 .lower-nav {
@@ -137,8 +137,25 @@ p {
     margin-bottom: 10px;
 }
 
-.menu-main-section span:not(:last-of-type) {
+.menu-li-container li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu-main-section li:not(:last-of-type) {
     margin-right: 20px;
+}
+
+.div-line-nav {
+    background-color: rgba(173,255,47);
+    height: 2px;
+    width: 30px;
+    margin-bottom: 8px;
+    margin: auto;
+}
+
+.main-img-container {
+    margin-right: 15px;
 }
 
 .main-img {
@@ -166,6 +183,7 @@ p {
     align-content: flex-start;
     justify-content: space-between;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .creato-per-john-section {
@@ -189,11 +207,29 @@ p {
 }
 
 .footer-container {
-    height: 40px;
+    height: 70px;
     width: 100%;
-    background-color: violet; 
+    background-color: rgba(40,40,40); 
     position: fixed;  
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.footer-artist-section>div,
+.upper-progress-bar>div,
+.volume-section>div {
+    margin-right: 10px;
+}
+
+.footer-container div {
+    display: inline-block;
+}
+
+.footer-container i {
+    color: white;
 }
 
 .fl {
@@ -217,6 +253,44 @@ p {
 #logo-spotify-small {
     display: none;
 }
+
+/*#div-line-nav-bar { SCORRETTO MA CONTIENE INFORMAZIONI SU COME DEV'ESSERE
+    border-left: 2px solid rgba(173,255,47);
+} */
+
+#playing-artist {
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/sinister.jpeg);
+    background-size: cover;
+}
+
+.play-bar-section>div {
+    display: block;
+    text-align: center;
+}
+
+.play-bar-progress-bar {
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgba(77,77,77);
+}
+
+.progress {
+    height: 5px;
+    width: 30%;
+    background-color: rgba(154,154,154);
+}
+
+#big-bar {
+    width: 400px;
+}
+
+#small-bar {
+    width: 50px;
+}
+
+
 
 #heavy-metal-img {
     background-image: url(../img/metal_lifting.jpg);
@@ -314,25 +388,23 @@ p {
 
     /*MAIN SECTION*/
 
+    .menu-li-container {
+        text-align: center;
+    }
+
     .main-section .recently-played-section {
         flex-wrap: wrap;
         justify-content: flex-start;
     }
 
-    .main-img-container {
-       display: flex;
-    }
-    
-    .main-img {
-        width: 150px;
+    .main-img {  /*NON CORRETTO PERò NON RIESCO A IMPOSTARE LE WIDTH MAIN-IMG-CONTAINER CON LE PERCENTUALI E DI CONSEGUENZA IL GROW*/
+        width: 150px;     
         height: 150px;
-        flex-grow: 3;
-    } 
-
-    .recently-played-section>div {
-        display: block;
     }
 
+    /*.main-img-container {
+        flex-grow: 1;
+    }*/
 }
 
  
@@ -340,23 +412,35 @@ p {
  @media screen and (min-width: 576px) and (max-width: 768px) { /*S MEDIA QUERY*/
 
     /*MAIN SECTION*/
+    .menu-li-container {
+        text-align: center;
+    }
 
     .main-section .recently-played-section {
         flex-wrap: wrap;
         justify-content: flex-start;
     }
 
-    .main-img-container {
-        display: flex;
-    }
-    
-    .main-img {
+    .main-img { /*NON CORRETTO PERò NON RIESCO A IMPOSTARE LE WIDTH MAIN-IMG-CONTAINER CON LE PERCENTUALI E DI CONSEGUENZA IL GROW*/
         width: 150px;
         height: 150px;
-        flex-grow: 3;
-    } 
-
-    .recently-played-section>div {
-        display: block;
     }
+
+    /*.main-img-container {
+        flex-grow: 1;
+    }*/
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .main-section .recently-played-section {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .main-img { /*NON CORRETTO PERò NON RIESCO A IMPOSTARE LE WIDTH MAIN-IMG-CONTAINER CON LE PERCENTUALI E DI CONSEGUENZA IL GROW*/
+        width: 150px;
+        height: 150px;
+    }
+
 }

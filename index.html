@@ -54,14 +54,14 @@
 
                 <div class="main-section fr">
                     <nav class="menu-main-section">
-                        <div class="menu-span-container">
-                            <span>In evidenza</span>
-                            <span>Podcast</span>
-                            <span>Classifiche</span>
-                            <span>Generi e mood</span>
-                            <span>Nuove uscite</span>
-                            <span>Scopri</span>
-                        </div>
+                        <ul class="menu-li-container">
+                            <li>In evidenza <div class="div-line-nav"></div></li>
+                            <li>Podcast</li>
+                            <li>Classifiche</li>
+                            <li>Generi e mood</li>
+                            <li>Nuove uscite</li>
+                            <li>Scopri</li>
+                        </ul>
                     </nav>
 
                     <h3>Recently played</h3>
@@ -168,7 +168,44 @@
         </main>
 
         <footer class="relative">
-            <div class="footer-container"></div>
+            <div class="footer-container">
+
+                <div class="footer-artist-section">
+                    <div id="playing-artist"></div>
+                    <div>
+                        <h4>Sinister</h4>
+                        <div>Brano nome</div>
+                    </div>
+                    <div><i class="far fa-heart"></i></div>
+                    <div><i class="far fa-folder"></i></div>
+                </div>
+
+                <div class="play-bar-section">
+                    <div class="upper-progress-bar">
+                        <div><i class="fas fa-random"></i></div>
+                        <div><i class="fas fa-fast-backward"></i></div>
+                        <div><i class="far fa-play-circle fa-2x"></i></div>
+                        <div><i class="fas fa-fast-forward"></i></div>
+                        <div><i class="fas fa-redo-alt"></i></div>
+                    </div>
+                    <div>
+                        <div>0:25</div>
+                        <div id="big-bar" class="play-bar-progress-bar clearfix">
+                            <div class="progress fl"></div>
+                        </div>
+                        <div>4:35</div>
+                    </div>
+                </div>
+
+                <div class="volume-section">
+                    <div><i class="fas fa-sliders-h"></i></div>
+                    <div><i class="fas fa-desktop"></i></div>
+                    <div><i class="fas fa-volume-up"></i></div>
+                    <div id="small-bar" class="play-bar-progress-bar clearfix">
+                        <div class="progress fl"></div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
