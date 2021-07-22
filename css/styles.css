@@ -264,7 +264,7 @@ p {
 
 /*MEDIA QUERY SECTION*/
 
-@media screen and (max-width: 575px) {  /*XS MEDIA QUERY*/
+@media screen and (min-width: 200px) /*200PX MESSO PER PROVA*/ and (max-width: 576px) {  /*XS MEDIA QUERY*/
 
     /*NAV-BAR SECTION*/
     .nav-bar {
@@ -309,16 +309,54 @@ p {
 
     .user-img {
         margin-top: 30px;
-        margin-bottom: 20px;
     }
+    
 
     /*MAIN SECTION*/
 
-    @media screen and /*(max-width:575px) and*/ (min-width: 576px) {
+    .main-section .recently-played-section {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 
-        .recently-played-section {
-            display: none;
-        }
+    .main-img-container {
+       display: flex;
     }
     
+    .main-img {
+        width: 150px;
+        height: 150px;
+        flex-grow: 3;
+    } 
+
+    .recently-played-section>div {
+        display: block;
+    }
+
+}
+
+ 
+
+ @media screen and (min-width: 576px) and (max-width: 768px) { /*S MEDIA QUERY*/
+
+    /*MAIN SECTION*/
+
+    .main-section .recently-played-section {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .main-img-container {
+        display: flex;
+    }
+    
+    .main-img {
+        width: 150px;
+        height: 150px;
+        flex-grow: 3;
+    } 
+
+    .recently-played-section>div {
+        display: block;
+    }
 }
